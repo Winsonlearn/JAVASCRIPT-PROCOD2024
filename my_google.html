@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search</title>
+
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 220px;
+        }
+
+        h1{
+            font-size: 80px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+      
+        
+        form div{
+            display: inline-block;
+            border: 1px solid black;
+            padding: 5px 10px;
+            height: 36px;
+            border-radius: 18px;
+        }
+      
+        form input[type=submit]{
+            height: 36px;
+            width: 36px;
+            border-radius: 18px;
+            background-color: magenta;
+            border: none;
+            cursor: pointer;
+        
+        }
+        
+        form input[type=text]{
+            border: none;
+            outline: none;
+            width: 500px;
+        }
+        form{
+            width: 880px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1><span style="color: aquamarine;">G</span><span style="color: rgb(255, 92, 206);">o</span>ogle</h1>
+    <form action="https://www.google.com/search" target="_blank">
+        <div>
+            <span class="icon-search">🔎</span>
+            <input type="text" name="q" id="" placeholder="Search here">
+        </div>
+        <input type="submit" value="🩷">
+    </form>
+    
+</body>
+</html>
