@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclass</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: purple;
+            text-align: center;
+        }
+
+        div,span{
+            display: inline-block;
+            text-align: center;
+            color: dimgrey;
+            margin: 20px;
+            margin-top: 250px;
+
+        }
+        div.box{
+            width: 100px;
+            height: 100px;
+            background-color: salmon;
+            font-size: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+        
+        div.box:hover{
+            width: 100px;
+            height: 100px;
+            background-color: yellowgreen;
+            font-size: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+        div.box-circle{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(255, 0, 140);
+            font-size: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+
+        div.box-circle:hover{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(133, 30, 164);
+            border-radius: 50%;
+            font-size: 100px;
+            line-height: 100px;
+            text-align: center;
+
+        }
+        span.box-semicircle{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(255, 234, 0);
+            font-size: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+        span.box-semicircle:hover{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(8, 243, 200);
+            border-radius: 20px;
+            font-size: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+
+       
+    </style>
+</head>
+<body>
+    
+    <div class="box">1</div>
+    <div class="box-circle">2</div>
+    <span class="box-semicircle">3</span>
+</body>
+</html>
