@@ -4,62 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Search</title>
-
-
+    <link rel="stylesheet" href="google_cheat.css">
     <style>
-
         *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-
+            
         }
-
         body{
             font-family: Arial, Helvetica, sans-serif;
-            margin-top: 220px;
         }
-
-        h1{
-            font-size: 80px;
+        header{
+            background-color: rgb(186, 57, 193);
+            padding: 30px;
+        }
+        
+        header nav{
+            background-color: rgb(195, 0, 255);
+            width: fit-content;
+            float: right;
+            line-height: 60px;
+            height: 60px;
+        }
+        
+        header nav a{
+            text-decoration: none;
+            color: black;
+            font-size: 18pt;
+            margin-left: 30px;
+        }
+        
+        
+        section.clear{
+            clear: both;
+        }
+        
+        
+        
+        header div.profile-picture{
+            width: 60px;
+            height: 60px;
+            float: right;
+            border-radius: 50%;
+            background-color: rgb(255, 255, 255);
+            margin-left: 30px;
+            background-image: url(/JAVASCRIPT/07/akademicrypto.jpeg);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            
+        }
+        section.google h1{
+            font-size: 60px;
             margin-bottom: 10px;
             text-align: center;
+            margin-top: 180px;
         }
-
-      
-        
-        form div{
+        section.google form{
+            width: 880px;
+            margin: 0px auto;
+            text-align: center;
+        }
+        section.google form div{
             display: inline-block;
             border: 1px solid black;
             padding: 5px 10px;
             height: 36px;
             border-radius: 18px;
         }
-      
-        form input[type=submit]{
+        section.google form input[type=text]{
+            border: none;
+            outline: none;
+            width: 500px;
+        }
+        section.google form input[type=submit]{
             height: 36px;
             width: 36px;
             border-radius: 18px;
             background-color: magenta;
             border: none;
             cursor: pointer;
+            
+        }
+        
+        
+        
+        
+        
+        @media screen and (max-width:670px){
+           
+            header nav{
+                float: left;
+            }
+            
+            header nav a {
+                margin: 0 5px 0 0;
+                font-size: 12pt;
+            }
+            header nav a.icon{
+                display: none;
+            }
+            section.google form{
+                width: 90%;
+            }
+            section.google form input[type=text]{
+                width: 250px;
+            }
+            section.google form input[type=submit]{
+                display: none;
+            }
+            span.icon-search{
+                display: none;
+            }
         
         }
         
-        form input[type=text]{
-            border: none;
-            outline: none;
-            width: 500px;
-        }
-        form{
-            width: 880px;
-            margin: 0 auto;
-            text-align: center;
-        }
     </style>
 </head>
 <body>
-    <h1><span style="color: aquamarine;">G</span><span style="color: rgb(255, 92, 206);">o</span>ogle</h1>
+    <header>
+        <div href="#" class="profile-picture"></div>
+        <nav>
+            
+            <a href="https://gmail.com">Gmail</a>
+            <a href="/06/google_pt2/akademicrypto.jpeg">Images</a>
+            <a href="/03/resume/gambar.jpeg" class="icon">🫥</a>
+            <a href="/06/google_pt2/akademicrypto.jpeg" class="icon">→</a>
+        </nav>
+        <section class="clear"></section>
+    </header>
+    
+<section class="google">
+    <h1><span style="color: aquamarine;">G</span><span style="color: rgb(255, 92, 206);">o</span><span style="color: lightskyblue;">o</span><span style="color: springgreen;">g</span><span style="color: seagreen;">l</span><span style="color: brown;">e</span></h1>
     <form action="https://www.google.com/search" target="_blank">
         <div>
             <span class="icon-search">🔎</span>
@@ -67,6 +144,7 @@
         </div>
         <input type="submit" value="🩷">
     </form>
+</section>
     
 </body>
 </html>
