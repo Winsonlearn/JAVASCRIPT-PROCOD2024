@@ -4,117 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Search</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-
-        }
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        h1{
-            font-size: 80px;
-            margin-bottom: 10px;
-            text-align: center;
-        }
-        form div{
-            display: inline-block;
-            border: 1px solid black;
-            padding: 5px 10px;
-            height: 36px;
-            border-radius: 18px;
-        }
-        form input[type=submit]{
-            height: 36px;
-            width: 36px;
-            border-radius: 18px;
-            background-color: magenta;
-            border: none;
-            cursor: pointer;
-        
-        }
-        
-        form input[type=text]{
-            border: none;
-            outline: none;
-            width: 500px;
-        }
-        form{
-            width: 880px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        section.google{
-            margin-top: 50px;
-        }
-
-
-        header{
-            background-color: rgb(186, 57, 193);
-            margin: 20px;
-            padding: 20px;
-        }
-
-        header nav{
-            background-color: rgb(195, 0, 255);
-            width: fit-content;
-            float: right;
-            padding-top: 10px;
-            padding-right: 10px;
-        }
-
-        header nav a{
-            text-decoration: none;
-            color: black;
-            font-size: 18pt;
-            margin-left: 20px;
-            float: left;
-           
-        }
-
-        section.clear{
-            clear: both;
-        }
-
-       
-        header nav a:hover{
-            width: fit-content;
-            background-color: rgb(230, 88, 255);
-            text-decoration: underline;
-        }
-
-        header nav a.icon:hover{
-            width: fit-content;
-            background-color: rgb(228, 77, 255);
-            text-decoration: none;
-        }
-
-        div.profile-picture{
-            width: 30px;
-            height: 30px;
-            border-radius: 15px;
-            background-color: bisque;
-            float: right;
-            background-image: url(akademicrypto.jpeg);
-            background-size: cover;
-
-        }
-       
-
-    </style>
+    <link rel="stylesheet" href="my_google_bi.css">
+    
 </head>
 <body>
     <header>
         <nav>
-            
             <a href="https://gmail.com">Gmail</a>
-            <a href="/06/google_pt2/akademicrypto.jpeg">Images</a>
-            <a href="/03/resume/gambar.jpeg" class="icon">🫥</a>
-            <a href="/06/google_pt2/akademicrypto.jpeg" class="icon">→</a>
-            <a href="" class="none"></a>
+            <a href="#">Images</a>
+            <a href="#" class="icon">🫥</a>
+            <a href="#" class="icon">→</a>
+            <a href="#" class="profile-picture-position"></a>
             <div class="profile-picture"></div>
         </nav>
         <section class="clear"></section>

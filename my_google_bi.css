@@ -1,0 +1,333 @@
+@media screen and (max-width:600px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+        }
+        body{
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+        font-size: 65px;
+        margin-bottom: 10px;
+        text-align: center;
+        }
+        form div{
+        display: inline-block;
+        border: 1px solid black;
+        padding: 5px 10px;
+        height: 36px;
+        border-radius: 18px;
+        }
+        form input[type=submit]{
+        height: 30px;
+        width: 30px;
+        border-radius: 15px;
+        background-color: magenta;
+        border: none;
+        cursor: pointer;
+        
+        }
+        
+        form input[type=text]{
+        border: none;
+        outline: none;
+        width: 315px;
+        }
+        form{
+        width: 580px;
+        margin: 0 auto;
+        text-align: center;
+        }
+        
+        section.google{
+        margin-top: 90px;
+        }
+        
+        
+        header{
+        background-color: rgb(186, 57, 193);
+        margin: 10px;
+        padding: 10px;
+        }
+        
+        header nav{
+        background-color: rgb(195, 0, 255);
+        width: fit-content;
+        float: right;
+        margin: 5px;
+        
+        
+        }
+        
+        header nav a{
+        text-decoration: none;
+        color: black;
+        font-size: 13pt;
+        margin-left: 10px;
+        float: left;
+        margin-top: 10px;
+        
+        }
+        
+        
+        header nav a:hover{
+        text-decoration: none;
+        color: black;
+        font-size: 13pt;
+        margin-left: 10px;
+        float: left;
+        background-color: rgb(230, 88, 255);
+        text-decoration: underline;
+        }
+        
+        section.clear{
+        clear: both;
+        }
+        
+        
+        header nav a.icon:hover{
+        background-color: rgb(228, 77, 255);
+        text-decoration: none;
+        }
+        
+        div.profile-picture{
+        float: right;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: bisque;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-image: url(akademicrypto.jpeg);
+        margin-top: 4px;
+        
+        }
+        
+        
+}
+
+@media screen and (min-width:601px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+        }
+        body{
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+        font-size: 73px;
+        margin-bottom: 10px;
+        text-align: center;
+        }
+        form div{
+        display: inline-block;
+        border: 1px solid black;
+        padding: 5px 10px;
+        height: 36px;
+        border-radius: 18px;
+        }
+        form input[type=submit]{
+        height: 36px;
+        width: 36px;
+        border-radius: 18px;
+        background-color: magenta;
+        border: none;
+        cursor: pointer;
+        
+        }
+        
+        form input[type=text]{
+        border: none;
+        outline: none;
+        width: 330px;
+        }
+        form{
+        width: 650px;
+        margin: 0 auto;
+        text-align: center;
+        }
+        
+        section.google{
+        margin-top: 70px;
+        }
+        
+        
+        header{
+        background-color: rgb(186, 57, 193);
+        margin: 15px;
+        padding: 15px;
+        }
+        
+        header nav{
+        background-color: rgb(195, 0, 255);
+        width: fit-content;
+        float: right;        
+        
+        }
+        
+        header nav a{
+        text-decoration: none;
+        font-weight: 300;
+        color: black;
+        font-size: 14pt;
+        margin-left: 15px;
+        float: left;
+        margin-top: 10px;
+        
+        }
+        
+        
+        header nav a:hover{
+        text-decoration: none;
+        font-weight: 300;
+        color: black;
+        font-size: 14pt;
+        margin-left: 15px;
+        float: left;
+        background-color: rgb(230, 88, 255);
+        text-decoration: underline;
+        }
+        
+        section.clear{
+        clear: both;
+        }
+        
+        
+        header nav a.icon:hover{
+        background-color: rgb(228, 77, 255);
+        text-decoration: none;
+        }
+        
+        div.profile-picture{
+        float: right;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: bisque;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-image: url(akademicrypto.jpeg);
+        
+        }
+        
+        
+}
+
+@media screen and (min-width:801px){
+    
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+body{
+font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+font-size: 80px;
+margin-bottom: 10px;
+text-align: center;
+}
+form div{
+display: inline-block;
+border: 1px solid black;
+padding: 5px 10px;
+height: 36px;
+border-radius: 18px;
+}
+form input[type=submit]{
+height: 36px;
+width: 36px;
+border-radius: 18px;
+background-color: magenta;
+border: none;
+cursor: pointer;
+
+}
+
+form input[type=text]{
+border: none;
+outline: none;
+width: 500px;
+}
+form{
+width: 880px;
+margin: 0 auto;
+text-align: center;
+}
+
+section.google{
+margin-top: 50px;
+}
+
+
+header{
+background-color: rgb(186, 57, 193);
+margin: 20px;
+padding: 20px;
+}
+
+header nav{
+background-color: rgb(195, 0, 255);
+width: fit-content;
+float: right;
+margin: 5px;
+
+
+}
+
+header nav a{
+text-decoration: none;
+font-weight: bold;
+color: black;
+font-size: 18pt;
+margin-left: 20px;
+float: left;
+margin-top: 10px;
+
+}
+
+
+header nav a:hover{
+text-decoration: none;
+font-weight: bold;
+color: black;
+font-size: 18pt;
+margin-left: 20px;
+float: left;
+background-color: rgb(230, 88, 255);
+text-decoration: underline;
+}
+
+section.clear{
+clear: both;
+}
+
+
+header nav a.icon:hover{
+background-color: rgb(228, 77, 255);
+text-decoration: none;
+}
+
+div.profile-picture{
+float: right;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+background-color: bisque;
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+background-image: url(akademicrypto.jpeg);
+
+}
+
+}
