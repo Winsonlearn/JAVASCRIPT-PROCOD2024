@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prasmul</title>
+    <link rel="stylesheet" href="style_prasmul.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #FFFFFF;
+        min-height: 500vh;
+    }
+    
+    
+    
+    header .top{
+        width: 100%;
+        height: 75px;
+        background-color: blue;
+    }
+    
+    header .top .container{
+        width: 80%;
+        height: 75px;
+        margin: 0px auto;
+        background-color: greenyellow;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    header .top .container .left .nav-1-left img{
+        text-decoration: none;
+    }
+    header .top .container .left .nav-1-left img{
+        height: 20px;
+        width: 28px;
+        margin-left: 12px;
+    }
+    
+    header .top .container .right .nav-1-right{
+        text-decoration: none;
+        color: #574a4a;
+        font-size: 15px;
+        font-weight: 500;
+        margin-left: 15px;
+        margin-right: 8px;
+    }
+    header .top .container .right .nav-1-right:hover{
+        color: #a74949;
+        transition-duration: 0.3s;
+    }
+    
+    header .top .container .right .nav-green{
+        font-weight: bolder;
+        font-size: 15pt;
+        text-transform: uppercase;
+        padding: 30px;
+    }
+    /* ========================================= */
+    nav.bottom{
+        position: sticky;
+        top: 0;
+        height: 105px;
+        width: 100%;
+        background-color: darkgoldenrod;
+    }
+    /* ======================================= */
+    
+    .bottom .container{
+        height: 105px;
+        width: 80%;
+        margin: 0px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .bottom .left img{
+        width: 200px;
+        height: 80px;
+    }
+    
+    .bottom .right .nav-2-right{
+        margin-left: 15px;
+        font-size: 17px;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+    
+    .bottom .right .nav-2-right:hover{
+       color: greenyellow;
+       transition-duration: 0.3s;
+    }
+    
+    section.hero{
+        height: 1500px;
+        width: 100%;
+        background-color: aquamarine;
+        background-image: url(assets/assets/random4.jpeg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    section.hero-4{
+        margin-top: 20px;
+        display: grid;
+        height: 400px;
+        width: 100%;
+        background-color: darkred;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 400px;
+    }
+    
+    section.hero-4 .item1{
+        background-color: aqua;
+        background-image: url(assets/assets/random5.jpeg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+    }
+    section.hero-4 .item2{
+        background-color: rgb(255, 0, 0);
+        background-image: url(assets/assets/random1.jpeg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    section.hero-4 .item3{
+        background-color: rgb(37, 38, 79);
+        background-image: url(assets/assets/random2.jpeg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    section.hero-4 .item4{
+        background-color: rgb(195, 0, 255);
+        background-image: url(assets/assets/random3.jpeg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+<body>
+    <header>
+        <nav class="top">
+            <div class="container">
+                <section class="left">
+                    <a href="#" class="nav-1-left"><img src="assets/assets/random1.jpeg" alt=""></a>
+                    <a href="#" class="nav-1-left"><img src="assets/assets/random2.jpeg" alt=""></a>
+                </section>
+                <section class="right">
+                    <a href="#" class="nav-1-right">Student</a>
+                    <a href="#" class="nav-1-right">Staff</a>
+                    <a href="#" class="nav-1-right">Alumni</a>
+                    <a href="#" class="nav-1-right">VR Campus Tour</a>
+                    <a href="#" class="nav-1-right">MyPrasmul</a>
+                    <a href="#" class="nav-1-right nav-green">Registrasi</a>
+                </section>
+            </div>
+        </nav>
+
+    </header>
+    <nav class="bottom">
+        <div class="container">
+            <section class="left">
+                <a href="#" class="nav-2-left"><img src="assets/assets/random1.jpeg" alt=""></a>
+            </section>
+            <section class="right">
+                <a href="#" class="nav-2-right">Tentang</a>
+                    <a href="#" class="nav-2-right">Admisi</a>
+                    <a href="#" class="nav-2-right">Program</a>
+                    <a href="#" class="nav-2-right">Kantor & Layanan</a>
+                    <a href="#" class="nav-2-right">Kehidupan Kampus</a>
+                    <a href="#" class="nav-2-right ">Berita & Acara</a>
+                    <a href="#" class="nav-2-right "><i class='bx bx-search'></i></a>
+            </section> 
+        </div>
+    </nav>
+    <section class="hero">
+
+    </section>
+    <section class="hero-4">
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <div class="item4"></div>
+    </section>
+</body>
