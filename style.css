@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFFFFF;
+    
+}
+ header{
+    width: 100%;
+    background-color: orangered;
+ }
+
+ header .container-lol{
+    max-height: 200px;
+    background-color: orangered;
+    width: 85%;
+    margin: 0 auto;
+ }
+
+
+header  nav{
+    max-height: 60px;
+    width: 100%;
+    background-color: orangered;
+    padding: 3px;
+}
+
+header nav .container{
+    min-height: 30px;
+    background-color: orangered;
+}
+
+header nav .container .left{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 50%;
+    float: left;
+    padding-top: 5px;
+}
+
+header nav .container .left .nav-item{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 500;
+    border-right: 1px solid #FFFFFF;
+    padding: 0px 5px;
+}
+
+header nav .container .left .nav-icon{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0px 5px;
+
+}
+
+header nav .container .left a:hover{
+    opacity: 70%;
+}
+
+header nav .container .right{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 50%;
+    float: right;
+    padding-top: 5px;
+}
+
+header nav .container .right .nav-item{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0px 5px;
+}
+
+header nav .container .right .border{
+    border-right: 1px solid #FFFFFF;
+    padding: 0px 8px;
+    
+}
+header nav .container .right .border{
+    font-weight: bold;
+}
+header nav .container .right .nav-item:hover{
+    opacity: 70%;
+}
+
+/* ___________________________________________________________ */
+
+header .nav-search{
+    height: 110px;
+    background-color: orangered;
+    width: 100%;
+    padding: 5px;
+}
+header .nav-search .container{
+    height: 100px;
+    background-color: orangered;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+header .nav-search .container .left-logo{
+    width: 130px;
+    height: 80px;
+    background-image: url(assets/shopee.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: orangered;
+    border-radius: 5px;
+}
+
+header .nav-search .container .center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header .nav-search .container .center .top form{
+    width: max-content;
+    height: min-content;
+    background-color: #FFFFFF;
+    border-radius: 2px;
+}
+header .nav-search .container .center .top form div{
+    display: inline-flex;
+    height: fit-content;
+    padding: 10px;
+}
+header .nav-search .container .center .top form div input[type=text]{
+    border: none;
+    outline: none;
+    width: 730px;
+}
+header .nav-search .container .center .top form input[type=submit]{
+    height: 42px;
+    width: 75px;
+    background-color: orangered;
+    border: 2px white solid;
+    border-radius: 2px;
+    font-size: 20px;
+}
+header .nav-search .container .center .top form input[type=submit]:hover{
+    opacity: 80%;
+}
+
+header .nav-search .container .center .bottom{
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    padding-top: 10px;
+}
+header .nav-search .container .center .bottom .nav-item{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 12px;
+    margin-right: 10px;
+
+}
+
+header section.nav-search .container section.right{
+    float: right;
+
+}
+header section.nav-search .container  section.right a{
+    font-size: 50px;
+    text-align: center;
+}
+
+/* ___________________________________________________________ */
+ 
+section.hero{
+    width: 85%;
+    margin: 30px auto;
+    height: 300px;
+    background-color: #FFFFFF;
+    display: grid;
+    gap: 8px;
+    grid-template-areas: 
+    'header header header header header side-Top side-Top'
+    'header header header header header side-Bottom side-Bottom'
+    
+    ;
+}
+
+section.hero > div{
+    background-color: #FFFFFF;
+    padding: 20px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(assets/assets/random4.jpeg);
+
+}
+section.hero .item1{
+    grid-area: header;
+    background-color: #FFFFFF;
+    background-image: url(assets/assets/random5.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.hero .item2{
+    background-image: url(assets/assets/random3.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: side-Top;
+    background-color: black;
+}
+section.hero .item3{
+    background-image: url(assets/assets/random2.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: side-Bottom;
+    background-color: blue;
+}
+
+/* ___________________________________________________________ */
+
+section.nav-shop{
+    display: grid;
+    width: 85%;
+    margin: 10px auto;
+    background-color: #FFFFFF;
+    height: 150px;
+    grid-template-rows: 150px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 8px;
+
+}
+
+section.nav-shop > div{
+    background-color: indigo;
+    padding: 20px;
+}
+
+section.nav-shop .item1{
+    background-image: url(assets/assets/akademicrypto.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.nav-shop .item2{
+    background-image: url(assets/assets/background.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.nav-shop .item3{
+    background-image: url(assets/assets/igs.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.nav-shop .item4{
+    background-image: url(assets/assets/igs2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.nav-shop .item5{
+    background-image: url(assets/assets/world.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.nav-shop .item6{
+    background-image: url(assets/assets/kota.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.nav-shop .item7{
+    background-image: url(assets/assets/logo-igs.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.nav-shop .item8{
+    background-image: url(assets/assets/menu.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.nav-shop .item9{    
+    background-image: url(assets/assets/part.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.nav-shop .item10{
+    background-image: url(assets/assets/random2.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
