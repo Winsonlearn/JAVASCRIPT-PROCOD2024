@@ -1,0 +1,523 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    min-height: 200vh;
+    background-color: #1E2D49;
+}
+
+.container{
+    width: 80%;
+    margin: 0px auto;
+    background-color: aqua;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+}
+
+/* Header */
+
+header{
+    background-color: #00376A;
+    
+}
+header .container{
+    justify-content: space-between;
+    height: 60px;
+    background-color: #00376A;
+}
+header .container .flags{
+    font-size: 18px;
+}
+header .container .nav-header{
+    width: 580px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .container .nav-header a{
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 16px;
+    color: #919BAD;
+    font-weight: 300;
+}
+header .container .nav-header a:hover{
+    color: #FFFFFF;
+    transition-duration: 0.5s;
+}
+
+header .container .nav-header a.btn{
+    display: inline-block;
+    background-color: rgb(61,177,102);
+    color: #FFFFFF;
+    font-weight: 600;
+    padding: 0 9px;
+    height: 60px;
+    width: 120px;
+    line-height: 60px;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+header .container .nav-header a.btn:hover{
+    color: #FFFFFF;
+}
+
+/* STICKY NAVIGATION */
+
+nav{
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+nav .container{
+    justify-content: space-between;
+    height: 91px;
+    background-color: white;
+}
+
+nav .container ul.sticky-nav li.item{
+    display: inline-block;
+    list-style: none;
+    font-size: 16px;
+    margin-left: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+    margin-left: 25px;
+    color: #163269;
+}
+nav .container ul.sticky-nav li.item:hover{
+    color: #00ff80;
+    transition-duration: 0.75s;
+}
+/* SECTION HERO / JUMBO TRON */
+
+section.hero{
+    height: calc(100vh - 91px);
+    background-color: yellowgreen;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(assets/prasmuls_1.webp);
+}
+
+section.hero .container{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+/* SECTION CHILD-HERO */
+
+section.child-hero{
+    display: grid;
+    height: 330px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 330px;
+    background-color: #D8E3FB;
+}
+
+section.child-hero .item1ch{
+    background-color: #1E2D49;
+    background-image: url(assets/assets/random5.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.child-hero .item2ch{
+    background-color: #1E2D49;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://cdn.shortpixel.ai/spai/w_1920+q_lossless+ret_img+to_webp/www.prasetiyamulya.ac.id/wp-content/uploads/2021/08/Gedung-PMBS-Universitas-Prasetiya-Mulya.jpg&quot;);
+}
+section.child-hero .item3ch{
+    background-image: url(assets/assets/random2.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #1E2D49;
+}
+section.child-hero .item4ch{
+    background-image: url(assets/assets/random3.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #1E2D49;
+}
+section.child-hero .item-center{
+    background-image: url(assets/prasmuls_2.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 146px;
+    width: 240px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+/* SECTION TENTANG */
+
+section.tentang{
+    height: 130vh;
+    background-color: #1E2D49;
+}
+
+section.tentang .container{
+    display: grid;
+    grid-template-columns: 8fr 14fr;
+    grid-template-rows: 100vh;
+    background-color: #1E2D49;
+}
+
+section.tentang .container .left{
+    height: 100%;
+    padding: 10px;
+    padding-top: 100px;
+}
+
+
+section.tentang .container .left h1{
+    font-size: 31px;
+    color: #A8A8A8;
+    font-weight: bold;
+}
+section.tentang .container .left img{
+    width: 230px;
+    height: 65px;
+    color: #FFFFFF;
+}
+section.tentang .container .right{
+    height: 100%;
+    padding: 15px;
+    padding-top: 100px;
+
+}
+section.tentang .container .right h1{
+    font-size: 40px;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+section.tentang .container .right p{
+    font-size: 22px;
+    color: #D8E3FB;
+    font-weight: 400;
+    letter-spacing: 1.25;
+    margin-top: 25px;
+}
+section.tentang .container .right p a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+section.tentang .photo-container{
+    width: 80%;
+    margin: 0px auto;
+    background-color: #A8A8A8;
+    background-image: url(assets/prasmuls_relative.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 220px;
+    position: relative;
+    top: 70px;
+}
+
+/* SECTION VIDEO */
+
+section.video{
+    height: calc(100vh - 91px);
+    background-color: darksalmon;
+}
+
+/* SECTION PENDAFTARAN */
+
+section.pendaftaran{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 65vh;
+    background-color: #1E2D49;
+}
+
+section.pendaftaran .left{
+    background-color: #A8A8A8;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://cdn.shortpixel.ai/spai/w_1920+q_lossless+ret_img+to_webp/www.prasetiyamulya.ac.id/wp-content/uploads/2020/04/Graduated-Universitas-Prasetiya-Mulya.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.pendaftaran .right{
+    background-color: #A8A8A8;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://cdn.shortpixel.ai/spai/w_1920+q_lossless+ret_img+to_webp/www.prasetiyamulya.ac.id/wp-content/uploads/2019/11/Gedung-eka-tjipta-widjaja-Universitas-Prasetiya-Mulya-edited.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 50px;
+}
+
+section.pendaftaran .right h1{
+    color: #FFFFFF;
+    font-size: 28px;
+}
+
+section.pendaftaran .right h2{
+    color: #339966;
+    font-size: 18.2px;
+    margin-bottom: 15px;
+}
+
+section.pendaftaran .right p{
+    font-size: 18px;
+    color: #FFFFFF;
+    width: 480px;
+    height: 88px;
+    text-align: center;
+    margin-left: 16%;
+}
+
+section.pendaftaran .right button{
+    background-color: #339966;
+    width: 113px;
+    height: 55px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+/* SECTION INFO */
+section.info{
+    height: 110vh;
+    background-color: #1E1E1E;
+    padding-top: 170px;
+}
+
+.item1 { 
+    grid-area: Head;
+}
+.item2 { 
+    grid-area: Head2;
+}
+.item3 { 
+    grid-area: Side;
+}
+.item4 { 
+    grid-area: Main;
+}
+.item5 { 
+    grid-area: Main2;
+}
+section.info .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 40vh 40vh;
+    grid-template-areas: 
+    "Head Head2 Side"
+    "Main Main2 Footer";
+    gap: 30px;
+    align-items: stretch;
+    background-color: #1E1E1E;
+
+}
+section.info .container > div{
+    background-color: #1E1E1E;
+
+    padding: 20px 0;
+}
+section.info .container i{
+    font-size: 32px;
+}
+section.info .container h1{
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+section.info .container p{
+    color: #A8A8A8;
+    margin-top: 15px;
+    font-weight: 400;
+}
+section.info .container p.green{
+    margin-top: 25px;
+    color: #4BBE9F;
+    cursor: pointer;
+    font-weight: 400;
+}
+section.info .container p.green:hover{
+    color: #FFFFFF;
+}
+
+/* SECTION BERITA */
+
+section.berita {
+    height: 150vh;
+    padding-top: 100px;
+    margin: 0px auto;
+    color: #FFFFFF;
+    width: 80%;
+    background-color: #1E2D49;
+}
+
+section.berita .container-berita{
+    margin: 0px auto;
+    width: 80%;
+    display: grid;
+    background-color: #1E2D49;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 45vh 45vh;
+    grid-template-areas: 
+    "Head Head2 Side"
+    "Main Main2 Footer";
+    gap: 30px;
+    align-items: stretch;
+}
+section.berita .container-berita img{
+    width: 100%;
+    height: 70%;
+}
+
+section.berita h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+section.berita p{
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+section.berita .container-berita p{
+    color: #959595;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+section.berita .container-berita h1{
+    font-size: 15px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+/* FOOTER */
+
+footer{
+    height: 75vh;
+    background-color: #2E82CA;
+    color: #FFFFFF;
+}
+
+footer .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50vh;
+    grid-template-areas: 
+    'part1 part2 part3';
+    gap: 15px;
+    padding: 10px;
+    align-items: stretch;
+    background-color: #2E82CA;
+
+}
+.item1f { 
+    grid-area: part1;
+    display: flex;
+}
+.item2f { 
+    grid-area: part2;
+}
+.item3f { 
+    grid-area: part3;
+}
+
+footer .container .border{
+    border-bottom: 2px solid #FFFFFF;
+    font-size: 17px;
+    padding: 12px 0;
+    margin-top: 0px;
+}
+
+footer .container h1{
+    font-size: 16px;
+    margin-top: 35px;
+}
+
+footer .container p{
+    font-size: 16px;
+}
+footer .container .item1f{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+footer .container .item2f{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+footer .container .item3f{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+
+footer .container .item3f ul li{
+    display: inline-block;
+    list-style: none;
+    cursor: pointer;
+    font-size: 25px;
+    margin: 10px 5px;
+}
+
+/* SECTION COPYRIGHT */
+
+section.copyright{
+    background-color: #163269;
+    
+}
+section.copyright .container{
+    width: 1180px;
+    height: 61.5px;
+    justify-content: center;
+    align-items: center;
+    background-color: #163269;
+    color: #FFFFFF;
+    opacity: 80%;
+}
+
+section.copyright .container p{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* SECTION WHATSAPP */
+
+section.whatsapp{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-image: url(assets/wa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 30px;
+
+}
