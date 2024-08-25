@@ -16,7 +16,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #f0f0f0;
+    background-color: white;
     box-shadow: 0 4px 4px grey;
   }
   
@@ -78,11 +78,11 @@ body {
     margin-bottom: 2rem;}
 
 .hero button {
-    background-color: #e74c3c;
+    background-color: red;
     width: 120px;
     height: 40px;
     text-align: center;
-    color: #fff;
+    color:whitesmoke;
     border-radius: 5px;
     text-transform: uppercase;
 }
@@ -108,7 +108,7 @@ body {
 }
 
 .game-grid {
-    background-color: #fff;
+    background-color:whitesmoke;
     border-radius: 10px;
     transition: transform 0.3s ease;
     box-shadow: 0 4px 6px grey;
@@ -139,13 +139,13 @@ body {
     text-align: center;
     padding: 0.8rem;
     background-color: #3498db;
-    color: #fff;
+    color: #f4f4f4;
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
 
 .game-grid a:hover {
-    background-color: #2980b9;
+    background-color: blue;
 }
   /*  bagCONTAINER */
 
@@ -153,7 +153,7 @@ body {
     width: 90%;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
+    background-color:whitesmoke;
     box-shadow: 0 0 10px grey;
     min-height: calc(100vh - 100px);
     margin-top: 0.2rem;
@@ -168,7 +168,7 @@ footer p {
 /* bag events */
 .events-page {
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: white;
   }
   
   .events-page h1 {
