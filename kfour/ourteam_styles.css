@@ -1,0 +1,123 @@
+:root {
+    --dark-grey: #0a0a23;
+    --light-grey: #f5f6f7;
+    --white: #ffffff;
+    --black: #000;
+  }
+  
+  .page-title {
+    margin: 1.3rem 0;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .category-photo {
+    margin: 1.2rem 0;
+    text-align: center;
+  }
+  
+  .category-photo img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filter-label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  .filter-dropdown {
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid var(--dark-grey);
+    border-radius: 5px;
+    background-color: var(--white);
+    cursor: pointer;
+  }
+  
+  .member-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  /* Menetapkan ukuran kartu member agar konsisten */
+.member-card {
+    background-color: var(--light-grey); /* Warna latar belakang kartu */
+    padding: 1rem;
+    width: 250px; /* Lebar tetap untuk semua kartu */
+    height: 300px; /* Tinggi tetap untuk semua kartu */
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; 
+  }
+  
+  .member-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .member-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--dark-grey); 
+  }
+  
+  .member-card p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--dark-grey); 
+  }
+  
+  .member-card .instagram-link {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    color: var(--dark-grey); 
+    text-decoration: none;
+  }
+  
+  .member-card .instagram-link img {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .member-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .page-title {
+      font-size: 1.5rem;
+    }
+  
+    .filter-label {
+      font-size: 1rem;
+    }
+  
+    .filter-dropdown {
+      font-size: 0.9rem;
+    }
+  
+    .member-card {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  
