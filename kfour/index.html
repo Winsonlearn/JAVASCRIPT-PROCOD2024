@@ -3,21 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serenity Camping Night</title>
+    <title>Serenita</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="events_styles.css">
+    <link rel="stylesheet" href="ourteam_styles.css">
 </head>
 <body>
-
     <div class="loading-screen" id="loadingScreen">
-        <img src="pokemon_profile.jpg" alt="Serenity Camping Night">
+        <img src="./assets/pokemon_profile.jpg" alt="Serenita">
     </div>
 
     <header>
         <div class="header-container">
+            <a href="#home" class="logo">
+                <img src="./assets/pokemon_profile.jpg" alt="Serenita Logo">
+                <span class="logo-text">Serenita</span>
+            </a>            
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
             <nav>
-                <ul>
+               
+                <ul class="nav-list">
                     <li><a href="#home" onclick="navigateTo('home')">Home</a></li>
                     <li><a href="#events" onclick="navigateTo('events')">Events</a></li>
                     <li><a href="#our-team" onclick="navigateTo('our-team')">About us</a></li>
@@ -25,11 +34,34 @@
             </nav>
         </div>
     </header>
+    
 
     <main>
         <section id="home" class="section active">
-            <h1>Serenity Camping Night</h1>
-            <p>Selamat datang di Serenity Camping Night. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet est optio ipsa minus autem nobis laboriosam rem, officia laudantium aperiam!</p>
+            <div class="carousel">
+                <div class="carousel-container">
+                    <div class="carousel-slide">
+                        <img src="./assets/1.jpeg" alt="Image 1">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="./assets/2.jpeg" alt="Image 2">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="./assets/3.jpeg" alt="Image 3">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="./assets/4.jpeg" alt="Image 4">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="./assets/5.jpeg" alt="Image 5">
+                    </div>
+                </div>
+                <button class="prev-btn">&#10094;</button>
+                <button class="next-btn">&#10095;</button>
+            </div>            
+              
+            <h1 class="title-home">Serenita Camping Night</h1>
+            <p class="text-home">Asteration (Per Aspera Ad Astra Generation) merupakan nama kabinet OSIS SMA IGS periode 2023/2024. Asteration berarti "to the stars through hardships" yang menggambarkan OSIS sebagai generasi yang akan berkerja keras melewati tantangan dan memiliki semangat juang yang tinggi untuk meraih bintang yaitu membangun IGS menjadi lebih terdepan.</p>
         </section>
 
         <section id="events" class="section">
@@ -38,21 +70,63 @@
         </section>
 
         <section id="our-team" class="section">
-            <h2>Tim Kami</h2>
-            <p>Kami adalah tim yang berdedikasi untuk menghadirkan pengalaman camping yang menenangkan dan menyenangkan.</p>
+            <h1 class="page-title">Group Four</h1>
+            <main>
+              <section class="category-photo">
+                <img id="category-photo" src="./assets/1.jpeg" alt="Category Photo" />
+              </section>
+              <label class="filter-label" for="team-filter">Field Section:</label>
+              <select id="team-filter" class="filter-dropdown">
+                <option value="all">All Members</option>
+                <option value="ketua">Chairman</option>
+                <option value="sekretaris">Secretary</option>
+                <option value="bendahara">Treasurer</option>
+                <option value="event">Event Section</option>
+                <option value="communication">Communication</option>
+                <option value="multimedia">Multimedia</option>
+                <option value="design">Design</option>
+                <option value="documentation">Documentation</option>
+                <option value="art-appreciation">Art Appreciation</option>
+                <option value="languages">Languages</option>
+                <option value="lineup-cleanliness">Lineup & Cleanliness</option>
+                <option value="shoe-guards">Shoe Guards</option>
+                <option value="security">Security</option>
+                <option value="catering">Catering</option>
+              </select>
+              <div id="member-cards" class="member-cards">
+              </div>
+            </main>
         </section>
     </main>
 
-
+    <div class="gradient"></div>
     <footer>
-        <div class="social-media">
-            <a href="#" aria-label="Facebook Serenity Camping"><i class="fab fa-facebook"></i></a>
-            <a href="#" aria-label="Twitter Serenity Camping"><i class="fab fa-twitter"></i></a>
-            <a href="#" aria-label="Instagram Serenity Camping"><i class="fab fa-instagram"></i></a>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Group Four</h3>
+                <p>Perkumpulan orang magang paling keren</p>
+            </div>
+            <div class="footer-section">
+                <h3><i class="fas fa-map-marker-alt"></i></h3>
+                <p>Jl. Mayor Ruslan No. 118, 20 Ilir I, Kec. Ilir Timur I, Palembang</p>
+            </div>
+            <div class="footer-section">
+                <h3>Sosial Media</h3>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/IGScare" aria-label="Facebook Serenita"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/IgnatiusGlobal" aria-label="Twitter Serenita"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/ignatiusglobal.sch/" aria-label="Instagram Serenita"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
         </div>
-        <p>© 2024 Serenity Camping Night. Hak Cipta Dilindungi.</p>
+        <div class="footer-bottom">
+            <p>© 2024 Serenita. All rights reserved.</p>
+        </div>
     </footer>
+    
 
     <script src="script.js"></script>
+    <script src="ourteam.js"></script>
+    <script></script>
 </body>
 </html>
