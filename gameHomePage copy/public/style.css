@@ -131,14 +131,14 @@ body {
 
 .game-grid p {
     padding: 0 1rem 1rem;
-    color: #666;
+    color: grey;
 }
 
 .game-grid a {
     display: block;
     text-align: center;
     padding: 0.8rem;
-    background-color: #3498db;
+    background-color: blue;
     color: #f4f4f4;
     text-decoration: none;
     transition: background-color 0.3s ease;
